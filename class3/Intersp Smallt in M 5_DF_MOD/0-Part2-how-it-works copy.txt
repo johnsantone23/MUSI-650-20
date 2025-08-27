@@ -1,0 +1,20 @@
+Part2-how-it-workshow pitch-hits get to Raychds.the fiddle~ or light-blue bang hits go to p pt1-pt2-triggers.in part2 these hits (bangs) go to hit#1.... hit#5. These are momentary, not tied to timersas the pitch-hits are in Part1. Whichever is most recent is where present hitremains.thence to [Sect-entry-Pt2]--- here each section has waiting the 5 // tunings, they > Raychd-tng-inforemember? Raychds have tunings only, not transpositions (modus)
+
+10/16/2013:
+how pitch-hits send tuning changes to shelving DigSyns.
+—the same bangs as above > Sect-entry-Pt2 where they bang thru, from the
+hybrid coll Part2-DSyn-hit-sets+, via the sends: 
+DSyn1-tunings, DSyn2-tunings, DSyn1-modu & DSyn2-modu.
+these sends are received by r's in DigSyn1-Pt2-plyM & DigSyn2-Pt2-plyM
+DSyn1Tngs has p DS & DSyn2Tngs
+
+rename DigSynTngsM to DigSyn1-TngsM and the other DigSyn2-TngsM
+or redo as p, with same name.
+
+tails mecha: where does tails-B@.1 go?
+how related to advance by btn 5?
+
+no.... tristeady1, 2, 3 have diffo constructions. Save them as tristeady1M etc.
+tristeady1 won't open! copy it then! & save as tristead1M
+tristeady2 has only 2 oscillators
+tristeady3 is same as tristeady1, with 4

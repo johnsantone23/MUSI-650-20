@@ -1,0 +1,162 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww9540\viewh15260\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs26 \cf0 Intersp-Sm in M5.rtf    \
+current (Oct 2016) is 
+\b *IS-combo-AAB 
+\b0   (version from spring Europe)\
+with failure in graphics displays.\
+\
+\
+Oct 2016, the graphics failure in IS\
+pitch displays hidden behind blank rectangles. why?\
+d\'92we have modular graphics in tools? in Max 4 tools?\
+\
+where else in M5 d\'92we have graphics displays?\
+\'85that main screen with violin etc: where that?\
+GStore? Watercress Well? \'97 WW has only the Max graphics\
+SD has \'93any-pitch-indr-AM\
+\'97find the source files. pitches_10_dbl.gif\
+well folder 
+\b IS_pitch_displays
+\b0 , has pitches_4_Band.tif\
+\'85 NOT GIF\
+open Sibelius, find immed pitches_3_Band etc.\
+in folder *IS graphics displays \'97 date is Aug 8, 2016, so this is very recent!\
+can u save these as jpg? look at log! but Sib can\'92t save as jpg.\
+find in M5, patch tif_displays_IS  only pitches_11_lowG_Band.tif displays right.\
+and yet in IS_pitch_displays thumbnails show all are there, all look ok.\
+\
+seems all 11 pitch sets are #11. try exporting #1 from Sibelius.\
+we\'92ve tif_displays_IS up and IS_pitch_displays folder is where we are putting \'91em\
+\'85 ok we\'92re gonna re-export pitches_3_Band\
+oolala she no work! pourquoi? change name to pitches_3_Bandy.tif\
+still it danna work. erase fpic, now it danna work at all.\
+but read fpic_blue.pict does work. so\'85 convert the tifs to picts!\
+\
+current (Jan 2016) is 
+\b *IS-combo-LR 
+\b0   (means Link Rd)\
+previous was *IS-combo-Angers \
+vers. w. working Filter Part 1 is *IS-combo-2-13aM\
+\
+Alpha try Jan 13 16\
+*  *  *\
+\
+Fast notes in Pt 1. the outer triggers. FastNotes-external-Air replacing FastNotes-8-08.3M. Main scrn bottom-right.\
+\
+\
+*  *  *\
+Wesleyan \
+\
+Dec. 5\
+loud Part 1 digsyn bug. deleted lines in poly~DigSyn_Pt1M\
+old file DigSynTngs should be gro'd.\
+coll DSyn-sect-settings2 has the vol as byte 3. change 1, to 0\
+need new name for the embedded coll: DS....settings3 (ok)\
+\
+\
+Dec. 4\
+\'97added disconnect for pitch sensors, btn 4 or mouse. \
+\'97sweeping filts in Part 1 need faders 14 & 15 raised as well as 17.\
+\'97inners vol Part 1 is working, fdr 2 = low fdr 3 = high\
+\'97fastnotes Part 1 --- don't need fdr 5, gro. vol for both set by fdr 4.\
+\
+Dec. 3 in tools, SimpleSynth devel\
+boot SimpleSynth, choose MIDI Source: SimpleSynth virtual input\
+Vibraphones, 85% to top of list. for chs 1 & 2.\
+(to check, in Max boot SimpleSynth 8-08)\
+\
+then boot *IS current, \
+double-click on noteout SimpleSynth 1: set to SS virtual input\
+missing audio-IS-8-08 ??\
+\
+Dec 2: where vol ctrl range over inners Pt 1?\
+\
+Nov 25 14\
+\
+first launch SimpleSynth. in System Prefs, Sound, Output, select MOTU Traveler.\
+boot *IS-combo-Angers.maxpat\
+\
+\
+try booting *IS-combo-10-13    filter part1 working.\
+DigSynTngsM --- remove switch controlled from DSyn1-sw, nothing is sending.\
+\
+Wesleyan Nov 24 14\
+Daniel brought in a new firewire cable with the 400 end slightly shorter\
+this one works. White one is intermittent.\
+\
+date to play next Monday.\
+\
+\
+\
+\
+Wesleyan Nov 23 14\
+\'97part 1 fastnotes coming out Mac's internal speakers.\
+\
+\
+(not necc: in fastnotes-8-08.3M, dble-click on noteout "SimpleSynth virtual input" & select Traveler )\
+*  *  *\
+see Fastnotes-SimpleSynth-basic in M5 tools\
+SimpleSynth should be sending out Audio, non?\
+find polyFastNotes!\
+\
+... or don't use SimpleSynth. Use a library of xylo sounds in Max.\
+\
+\
+\
+Angers 1-26-2014\
+\
+boot 
+\b *IS-combo-2-13aM\
+
+\b0 Sect-entry-Pt2   sends set-up values to filters.\
+but there's a more receont Sect-entry-Pt2M.maxpat  10/17/13\
+\
+.... look for a more recent master!\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b \cf0 *IS-combo-10-13.maxpat  
+\b0 date 10/18\
+yes! Angers Monday Jan 17 --- filters working.\
+so in this vers. be sure to change pitch set Part 11.\
+\
+2-22-13  in folder
+\i  
+\i0 I
+\b ntersp Smallt in M 5\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\b0 \cf0 booted 
+\b *IS-combo-3-12aM\
+
+\b0 \'85 gro things we don't need at first, like arduino-
+\fs28 db5-app\
+\
+& start a new cmd screen, 
+\b\fs26 *IS-combo-2-13aM.maxpat\
+
+\b0 fiddle~ in fiddle-IS-9-08bM \'97 lower left in turquoise panel\
+\
+isn't valid?  \'85look up fiddle~ in M5 LT\
+wants this: fiddle~ 1024 1 12 3\
+\
+but still "out of memory" error msg. delete fiddle-IS-9-08bM \
+atop p pt1+pt2-triggers-c  -no clue\
+ok one from tools > fiddles   fiddle-singleB-for5\
+new working one: fiddle~IS-13M with separated\
+IS-fidl-p-proc\
+\
+at boot, 4 patches open, unwanted \
+qpop5, tristeady3-lite, DigSynTngs, tristeady1\
+\
+*  *  *  alpha  *  *  * 1-27-2014\
+\
+pitch-sets: they're in IS-pset-evalu. lower left. fiddle~IS-13M sends\
+fiddle-pitch1 there.\
+the coll for pitches = coll pitch-sets-ISM. line 11 had vanished.\
+this seems a point susceptible to a bug.}
