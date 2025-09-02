@@ -3,9 +3,15 @@ s.makeWindow;
 
 ().play
 
-( freq:[440*(1/1),(5/4)] ).play;
+( freq:[200,300] ).play;
+
+( midinote:[50,60] ).play;
 
 (midinote: {60+1.0.xrand2}.dup(100)).play;
+
+
+(midinote: {60+24.0.xrand2}.dup(10)).play;
+
 
 e = (sustain: 4, freq: [69, 73].midicps).play
 // major triad in 12 tempered tuning
@@ -34,6 +40,10 @@ a.source = { }; // start your engines, A is empty!
 a.source = { SinOsc.ar([350, 351.3], 0, 0.2) };
 
 a.source = { SinOsc.ar(350*[1/1, 6/5], 0, 0.2) };
+
+a.source = { SinOsc.ar(350*[1/1, 6/5,3/2,7/4,9/4,10/2], 0, 0.2) };
+
+a.play
 
 a.source = { SinOsc.ar(350*1/1, 0, 0.2) };
 
@@ -72,49 +82,5 @@ a.free;
 a.source = { };
 
 a.scope;
-
-//let's do control voltage
-
-//the following examples applies one wave to the pitch of another.
-
-//first we will change volume.
-//we do this by MULTIPLYING one waveform by another
-(
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 60);
-	intensity = MouseY.kr(0, 1);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440, 0, 1 * mod);
-	pitch;
-	};
-)
-
-//actually the version below has an OFFSET that i rather link that is more functional.
-(
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 60);
-	intensity = MouseY.kr(0, 0.5);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440, 0, 0.5 + mod);
-	pitch;
-	};
-)
-
-//now we will change pitch.
-//the key is that the root of the first oscillators pitch is ADDED with the offset of another
-//this is called FREQUENCY modulation.
-(
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 30);
-	intensity = MouseY.kr(0, 400);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440+mod, 0, 0.6);
-	pitch;
-	};
-)
-
 
 
