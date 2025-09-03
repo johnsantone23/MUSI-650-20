@@ -77,10 +77,52 @@ a.source = { Blip.ar(100, (MouseX.kr(1,32,0)), 0.5)};  //try more overtones
 a.source = { LFPulse.ar((MouseX.kr(1,32,0).round(1))*100, 0, 0.5, 0.1)};  //try more overtones
 
 
+
+
 a.free;
 
 a.source = { };
 
 a.scope;
+
+(Spec.add(\period, ControlSpec( 0.01, 100, 'exp',0, 30) );
+Spec.add(\low, ControlSpec( -48, 100, 0, 0, -24) );
+Spec.add(\hi, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval, ControlSpec( -24, 24, 0, 1, 7) );
+
+
+
+Ndef(\cowell, {|period = 30, low = -24, hi = 96, interval = 7 |
+	var midiKey = LFSaw.kr(1/period, 1).range(low, hi);
+	LFPulse.ar ((midiKey + [0,interval]).midicps) * 0.1
+}).gui;
+)
+
+
+(
+Spec.add(\midinote, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval, ControlSpec( -24, 24, 0, 1, 7) );
+Ndef(\simpler, {|interval = 7, midinote=40 |
+	var midiKey = midinote;
+	LFPulse.ar((midiKey + [0,interval]).midicps) * 0.1
+}).gui;
+)
+
+(
+Spec.add(\midinote, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval1, ControlSpec( -24, 24, 0, 1, 7) );
+Spec.add(\interval2, ControlSpec( -24, 24, 0, 1, 7) );
+Spec.add(\amp1, \amp);
+Spec.add(\amp2, \amp);
+Spec.add(\amp3, \amp);
+Ndef(\simpler, {|interval1 = 7, interval2=12, midinote=40, amp1=0.1, amp2=0.1, amp3=0.1|
+	var midiKey, root, dyad, triad, output;
+	midiKey = midinote;
+	root = Pulse.ar((midiKey).midicps) * amp1;
+	dyad= Pulse.ar((midiKey + interval1).midicps) * amp2;
+	triad = Pulse.ar((midiKey + interval2).midicps) * amp3;
+	output = Mix{[root, dyad, triad]};
+}).gui;
+)
 
 
