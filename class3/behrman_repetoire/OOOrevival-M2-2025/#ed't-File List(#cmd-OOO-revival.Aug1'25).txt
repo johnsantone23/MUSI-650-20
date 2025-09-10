@@ -1,0 +1,99 @@
+Externals and subpatcher files for #cmd-OOO-revival.Aug1'25:
+
+Abstraction    6-phit-displOOO'25.maxpat           6-phit-displOOO'25.maxpat
+
+Abstraction    6hits+8v.maxpat                     DB's_Max8_on_M2/OOOrevival-M2-2025/6hits+8v.maxpat
+Abstraction    A_440.maxpat                        DB's_Max8_on2018Air/@TouchTones removed/A_440.maxpat
+Abstraction    AnSynC+drifters.4.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/AnSynC+drifters.4.maxpat
+Abstraction    AnSynL+drifters.4.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/AnSynL+drifters.4.maxpat
+Abstraction    AnSynR+drifters.4.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/AnSynR+drifters.4.maxpat
+Abstraction    AnSyns-pitches.aug'25.maxpat        DB's_Max8_on_M2/OOOrevival-M2-2025/AnSyns-pitches.aug'25.maxpat
+Abstraction    AnSyns-pitches.aug7.maxpat          DB's_Max8_on_M2/OOOrevival-M2-2025/AnSyns-pitches.aug7.maxpat
+Abstraction    AnSyns-sources.july22.maxpat        DB's_Max8_on_M2/OOOrevival-M2-2025/AnSyns-sources.july22.maxpat
+Abstraction    AnSyns-stagemgr+.maxpat             DB's_Max8_on_M2/OOOrevival-M2-2025/AnSyns-stagemgr+.maxpat
+
+Abstraction    DSynC+drifters.25.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSynC+drifters.25.maxpat
+Abstraction    DSynL+drifters.25.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSynL+drifters.25.maxpat
+Abstraction    DSynR+drifters.25.maxpat            DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSynR+drifters.25.maxpat
+Abstraction    DSyns-pitches.aug'25.maxpat         DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSyns-pitches.aug'25.maxpat
+Abstraction    DSyns-pitches.aug6.maxpat           DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSyns-pitches.aug6.maxpat
+Abstraction    DSyns-sources.july2.maxpat          DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25/DSyns-sources.july2.maxpat
+
+Abstraction    DSyns-stagemgr+.maxpat              DB's_Max8_on_M2/OOOrevival-M2-2025/DSyns-stagemgr+.maxpat
+Abstraction    OOO-6timers'25+.maxpat              DB's_Max8_on_M2/OOOrevival-M2-2025/OOO-6timers'25+.maxpat
+Abstraction    OOO-fiddle~5-25.maxpat              DB's_Max8_on_M2/OOOrevival-M2-2025/OOO-fiddle~5-25.maxpat
+
+Abstraction    OOOpanner1.maxpat                   OOOpanner1.maxpat
+Abstraction    OOOpanner10.maxpat                  DB's_Max8_on_M2/OOOrevival-M2-2025/OOOpanner10.maxpat
+Abstraction    OOOpanner2.maxpat                   OOOpanner2.maxpat
+Abstraction    OOOpanner3.maxpat                   OOOpanner3.maxpat
+
+Abstraction    OOOpanner4.maxpat                   DB's_Max8_on2018Air/OOO revival 2021/OOO-panners/OOOpanner4.maxpat
+Abstraction    OOOpanner5.maxpat                   DB's_Max8_on2018Air/OOO revival 2021/OOO-panners/OOOpanner5.maxpat
+Abstraction    OOOpanner8.maxpat                   DB's_Max8_on_M2/OOOrevival-M2-2025/OOOpanner8.maxpat
+Abstraction    OOOpanner9.maxpat                   DB's_Max8_on_M2/OOOrevival-M2-2025/OOOpanner9.maxpat
+Abstraction    bank4a-m.maxpat                     DB's_Max8_on_M2/OOOrevival-M2-2025/bank4a-m.maxpat
+Abstraction    bank4b-m.maxpat                     DB's_Max8_on_M2/OOOrevival-M2-2025/bank4b-m.maxpat
+Abstraction    bpatch-low-volu.maxpat              DB's_Max8_on2018Air/OOO revival 2021/OOO-logic/bpatch-low-volu.maxpat
+Abstraction    dipdriver.maxpat                    DB's_Max8_on_M2/OOOrevival-M2-2025/dipdriver.maxpat
+Abstraction    early-returns.maxpat                DB's_Max8_on_M2/OOOrevival-M2-2025/early-returns.maxpat
+Abstraction    floors&ceilings.aug6.maxpat         DB's_Max8_on_M2/OOOrevival-M2-2025/floors&ceilings.aug6.maxpat
+Abstraction    freerun-bends.july18'25.maxpat      DB's_Max8_on_M2/OOOrevival-M2-2025/freerun-bends.july18'25.maxpat
+Abstraction    freerun-sources-july23'25.maxpat    DB's_Max8_on2018Air/OOO revival 2021/OOO-freerun/freerun-sources-july23'25.maxpat
+Abstraction    new-lower-volus.maxpat              DB's_Max8_on2018Air/OOO revival 2021/OOO-logic/new-lower-volus.maxpat
+Abstraction    new-trigger-sets?.maxpat            DB's_Max8_on2018Air/OOO revival 2021/new-trigger-sets?.maxpat
+Abstraction    stage2b.aug12.maxpat                DB's_Max8_on_M2/OOOrevival-M2-2025/stage2b.aug12.maxpat
+Abstraction    symbol-handler*6.maxpat             DB's_Max8_on2018Air/OOO revival 2021/symbol-handler*6.maxpat
+Abstraction    translate-6-pitchesM8.maxpat        DB's_Max8_on_M2/OOOrevival-M2-2025/translate-6-pitchesM8.maxpat
+Abstraction    undu-ASC+.maxpat                    DB's_Max8_on2018Air/OOO revival 2021/OOO-undula/undu-ASC+.maxpat
+Abstraction    undu-ASL+.maxpat                    DB's_Max8_on2018Air/OOO revival 2021/OOO-undula/undu-ASL+.maxpat
+Abstraction    undu-ASR+.maxpat                    DB's_Max8_on2018Air/OOO revival 2021/OOO-undula/undu-ASR+.maxpat
+Abstraction    undu-DSC+.maxpat                    DB's_Max8_on_M2/OOOrevival-M2-2025/undu-DSC+.maxpat
+Abstraction    undu-DSL+.maxpat                    DB's_Max8_on_M2/OOOrevival-M2-2025/undu-DSL+.maxpat
+Abstraction    undu-DSR+.maxpat                    DB's_Max8_on_M2/OOOrevival-M2-2025/undu-DSR+.maxpat
+
+
+MSP64 Object   adc~.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     bgcolor.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     button.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     coll.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     comment.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     counter.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   dac~.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     delay.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   ezdac~.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+MSP64 Object   fiddle~.mxo                         Macintosh HD:/Users/davidbehrman/Documents/Max 8/Packages/fiddle_64bit_version/externals
+Max Object     fpic.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   freqshift~.mxo                      Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     function.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   gate~.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     gswitch2.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     line.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   line~.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     live.guilib.mxo                     Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/extensions/m4l
+MSP64 Object   live.gain~.mxo                      Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/m4l
+Max Object     live.guilib.mxo                     Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/extensions/m4l
+Max Object     loadmess.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     message.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     metro.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     mtof.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   noise~.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     nslider.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     number.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     panel.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   phasor~.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     pipe.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     prepend.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   receive~.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     scale.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   selector~.mxo                       Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+MSP64 Object   send~.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     slider.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     speedlim.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   times~.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     toggle.mxo                          Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     tosymbol.mxo                        Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+MSP64 Object   triangle~.mxo                       Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+MSP64 Object   tri~.mxo                            Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/msp
+Max Object     ubutton.mxo                         Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
+Max Object     umenu.mxo                           Macintosh HD:/Applications/Max 2.app/Contents/Resources/C74/externals/max
