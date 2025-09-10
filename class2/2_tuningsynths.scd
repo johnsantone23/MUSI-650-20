@@ -3,9 +3,15 @@ s.makeWindow;
 
 ().play
 
-( freq:[440*(1/1),(5/4)] ).play;
+( freq:[200,300] ).play;
+
+( midinote:[50,60] ).play;
 
 (midinote: {60+1.0.xrand2}.dup(100)).play;
+
+
+(midinote: {60+24.0.xrand2}.dup(10)).play;
+
 
 e = (sustain: 4, freq: [69, 73].midicps).play
 // major triad in 12 tempered tuning
@@ -34,6 +40,10 @@ a.source = { }; // start your engines, A is empty!
 a.source = { SinOsc.ar([350, 351.3], 0, 0.2) };
 
 a.source = { SinOsc.ar(350*[1/1, 6/5], 0, 0.2) };
+
+a.source = { SinOsc.ar(350*[1/1, 6/5,3/2,7/4,9/4,10/2], 0, 0.2) };
+
+a.play
 
 a.source = { SinOsc.ar(350*1/1, 0, 0.2) };
 
@@ -67,54 +77,52 @@ a.source = { Blip.ar(100, (MouseX.kr(1,32,0)), 0.5)};  //try more overtones
 a.source = { LFPulse.ar((MouseX.kr(1,32,0).round(1))*100, 0, 0.5, 0.1)};  //try more overtones
 
 
+
+
 a.free;
 
 a.source = { };
 
 a.scope;
 
-//let's do control voltage
+(Spec.add(\period, ControlSpec( 0.01, 100, 'exp',0, 30) );
+Spec.add(\low, ControlSpec( -48, 100, 0, 0, -24) );
+Spec.add(\hi, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval, ControlSpec( -24, 24, 0, 1, 7) );
 
-//the following examples applies one wave to the pitch of another.
 
-//first we will change volume.
-//we do this by MULTIPLYING one waveform by another
-(
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 60);
-	intensity = MouseY.kr(0, 1);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440, 0, 1 * mod);
-	pitch;
-	};
+
+Ndef(\cowell, {|period = 30, low = -24, hi = 96, interval = 7 |
+	var midiKey = LFSaw.kr(1/period, 1).range(low, hi);
+	LFPulse.ar ((midiKey + [0,interval]).midicps) * 0.1
+}).gui;
 )
 
-//actually the version below has an OFFSET that i rather link that is more functional.
+
 (
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 60);
-	intensity = MouseY.kr(0, 0.5);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440, 0, 0.5 + mod);
-	pitch;
-	};
+Spec.add(\midinote, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval, ControlSpec( -24, 24, 0, 1, 7) );
+Ndef(\simpler, {|interval = 7, midinote=40 |
+	var midiKey = midinote;
+	LFPulse.ar((midiKey + [0,interval]).midicps) * 0.1
+}).gui;
 )
 
-//now we will change pitch.
-//the key is that the root of the first oscillators pitch is ADDED with the offset of another
-//this is called FREQUENCY modulation.
 (
-a.source = {
-	var pitch, mod, tempo, intensity;
-	tempo = MouseX.kr(0, 30);
-	intensity = MouseY.kr(0, 400);
- 	mod = SinOsc.ar(tempo, 0, intensity);
-	pitch = SinOsc.ar(440+mod, 0, 0.6);
-	pitch;
-	};
+Spec.add(\midinote, ControlSpec( -48, 100, 0, 0, 96) );
+Spec.add(\interval1, ControlSpec( -24, 24, 0, 1, 7) );
+Spec.add(\interval2, ControlSpec( -24, 24, 0, 1, 7) );
+Spec.add(\amp1, \amp);
+Spec.add(\amp2, \amp);
+Spec.add(\amp3, \amp);
+Ndef(\simpler, {|interval1 = 7, interval2=12, midinote=40, amp1=0.1, amp2=0.1, amp3=0.1|
+	var midiKey, root, dyad, triad, output;
+	midiKey = midinote;
+	root = Pulse.ar((midiKey).midicps) * amp1;
+	dyad= Pulse.ar((midiKey + interval1).midicps) * amp2;
+	triad = Pulse.ar((midiKey + interval2).midicps) * amp3;
+	output = Mix{[root, dyad, triad]};
+}).gui;
 )
-
 
 

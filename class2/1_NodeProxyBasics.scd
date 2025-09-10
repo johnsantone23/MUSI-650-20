@@ -28,6 +28,18 @@ x.release;  // and off  without completely losing the thing.
 ~np = NodeProxy.new.play.fadeTime_(2).source_(nil); //is the same as above
 
 
+( ~np[1..10] =
+	{
+	var pitch = exprand(70, 3000); //so we need a few local variables in our synthesis function
+	var rhythm = exprand(1, 5);
+	var pulse = SinOsc.ar(rhythm)*0.1;
+	SinOsc.ar(pitch, 0, pulse);
+	};
+)
+
+
+~np.play
+
 //
 (~np[0..10]= {
 	var pitch = exprand(60, 3000);
@@ -91,14 +103,13 @@ x.release;  // and off  without completely losing the thing.
 ~np.guil
 
 
-~np = NodeProxy.new.play.fadeTime_(2).source_(nil);
+~np = NodeProxy.new.play.fadeTime_(0).source_(nil);
 ~np.play; // or just this!
 
 (
 ~np[0]={
   var snare, bdrum, hihat;
   var tempo = 8;
-
   tempo = Impulse.ar(tempo);
   snare = PinkNoise.ar(Decay2.ar(PulseDivider.ar(tempo, 4, 2), 0.005, 0.5));
   bdrum = LFSaw.ar(Line.ar(120,60, 1), 0, Decay2.ar(PulseDivider.ar(tempo, 4, 0), 0.005, 0.5));
@@ -106,6 +117,10 @@ x.release;  // and off  without completely losing the thing.
  (snare + bdrum + hihat) * 0.2 ! 2;
 }
 )
+
+
+
+~np.gui
 
 (
 ~np[1..10] = { |widefreq = 4, lo = 4, hi = 5, attack = 0.1, decay = 0.1 |

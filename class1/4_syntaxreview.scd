@@ -67,12 +67,15 @@ BPZ2.ar(WhiteNoise.ar(LFPulse.kr(LFPulse.kr(0.09, 0, 0.16, 10, 7), 0, 0.25, 0.1)
 	audio ! 2;
 };)
 
+~node.set(\rate, 10.2);
+
 ~node.play // now it isn't lost
 
 //or the SynthDef Way
 
 
-(SynthDef(\sprinkler,
+(
+SynthDef(\sprinkler,
 { 	|rate=0.09|
 	var frq, amp, audio;
 	frq = LFPulse.kr(rate, 0, 0.16, 10, 7);
@@ -81,7 +84,10 @@ BPZ2.ar(WhiteNoise.ar(LFPulse.kr(LFPulse.kr(0.09, 0, 0.16, 10, 7), 0, 0.25, 0.1)
 	audio= BPZ2.ar(audio);
 	audio ! 2;
 	Out.ar(0, audio); //the critical line!
-}).send(s);)
+}).add;
+)
+
+
 
 ~sprinkleDef = Synth(\sprinkler);
 
