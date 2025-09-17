@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 93.0, 1115.0, 582.0 ],
+		"rect" : [ 1781.0, 67.0, 1189.0, 979.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 13.0,
@@ -44,11 +44,11 @@
 					"color" : [ 0.552941176470588, 0.850980392156863, 0.337254901960784, 1.0 ],
 					"id" : "obj-67",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 77.333335638046265, 420.000012516975403, 74.0, 23.0 ],
-					"text" : "undu-ASL+",
+					"patching_rect" : [ 77.333335638046265, 420.000012516975403, 93.0, 23.0 ],
+					"text" : "Surging_ASL+",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -80,24 +80,6 @@
 					"patching_rect" : [ 242.666673898696899, 420.000012516975403, 76.0, 23.0 ],
 					"text" : "undu-ASC+",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"checkedcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-78",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 33.33333432674408, 409.333345532417297, 25.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 32.899902000000111, 412.000012278556824, 30.100097582767376, 30.100097582767376 ],
-					"uncheckedcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"varname" : "undula-sw-DS's[1]"
 				}
 
 			}
@@ -403,25 +385,6 @@
 					"color" : [ 0.533333, 0.431373, 0.192157, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
-					"id" : "obj-153",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 37.333334386348724, 314.000010013580322, 54.0, 20.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 29.94110351124192, 383.860156138888556, 54.0, 20.0 ],
-					"text" : "r undu-AS",
-					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 0.494118, 1.0 ],
-					"color" : [ 0.533333, 0.431373, 0.192157, 1.0 ],
-					"fontname" : "Arial",
-					"fontsize" : 10.0,
 					"id" : "obj-138",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -501,7 +464,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3518,7 +3481,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4209,7 +4172,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5068,7 +5031,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5460,24 +5423,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"checkedcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-56",
-					"maxclass" : "toggle",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 49.333334803581238, 421.333345890045166, 22.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 17.699901952316168, 372.018162356998573, 40.200000047683943, 40.200000047683943 ],
-					"uncheckedcolor" : [ 0.960784, 0.827451, 0.156863, 1.0 ],
-					"varname" : "undula-sw-AS's"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -5742,7 +5687,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 64.000001907348633, 386.666678190231323, 112.0, 23.0 ],
+					"patching_rect" : [ 64.250002980232239, 386.666678190231323, 112.0, 23.0 ],
 					"text" : "AnSynL+drifters.4",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -6152,7 +6097,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1020.000030398368835, 228.000006794929504, 142.810630920206677, 22.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"text" : "~d2 ~g2 ~d2 ~g2",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6177,7 +6122,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1052.000031352043152, 256.000007629394531, 128.066646509858401, 22.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"text" : "~d0 ~d1 ~d2 ~d3",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6319,7 +6264,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1037.333364248275757, 282.666675090789795, 154.0, 22.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"text" : "~d@1 ~d@-1 ~d@0 ~d@1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6344,7 +6289,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 56.000001668930054, 278.666674971580505, 118.520600755620904, 22.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"text" : "~a0 ~d1 ~a0 ~a1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6369,7 +6314,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 50.666668176651001, 245.333340644836426, 116.520600755620904, 22.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"text" : "~a0 ~d1 ~a0 ~d1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -6389,13 +6334,12 @@
 					"fontsize" : 12.0,
 					"gradient" : 1,
 					"id" : "obj-58",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.000001668930054, 214.666673064231873, 105.520600755620904, 35.0 ],
-					"text" : "~a0 ~d1 ~a-1 ~e-1",
+					"patching_rect" : [ 56.000001668930054, 214.666673064231873, 105.520600755620904, 22.0 ],
+					"text" : "~a0 ~d1 ~a0 ~d1",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -7476,13 +7420,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-78", 0 ],
-					"source" : [ "obj-153", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 0.307508587837219, 0.835519194602966, 0.838183283805847, 1.0 ],
 					"destination" : [ "obj-16", 0 ],
 					"order" : 2,
@@ -7531,14 +7468,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 2 ],
+					"destination" : [ "obj-67", 1 ],
 					"source" : [ "obj-161", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 1 ],
+					"destination" : [ "obj-67", 0 ],
 					"source" : [ "obj-161", 0 ]
 				}
 
@@ -8523,30 +8460,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-67", 0 ],
-					"order" : 2,
-					"source" : [ "obj-78", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-70", 0 ],
-					"order" : 0,
-					"source" : [ "obj-78", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-71", 0 ],
-					"order" : 1,
-					"source" : [ "obj-78", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-268", 0 ],
 					"source" : [ "obj-79", 0 ]
 				}
@@ -8828,10 +8741,6 @@
 			"obj-5::obj-63" : [ "live.gain~[23]", "live.gain~", 0 ],
 			"obj-5::obj-69" : [ "live.gain~[43]", "live.gain~", 0 ],
 			"obj-60" : [ "live.gain~[75]", "live.gain~", 0 ],
-			"obj-67::obj-13" : [ "live.dial[69]", "live.dial", 0 ],
-			"obj-67::obj-14" : [ "live.dial[66]", "live.dial", 0 ],
-			"obj-67::obj-16" : [ "live.gain~[74]", "live.gain~", 0 ],
-			"obj-67::obj-26" : [ "live.gain~[90]", "live.gain~", 0 ],
 			"obj-70::obj-13" : [ "live.dial[65]", "live.dial", 0 ],
 			"obj-70::obj-14" : [ "live.dial[73]", "live.dial", 0 ],
 			"obj-70::obj-16" : [ "live.gain~[79]", "live.gain~", 0 ],
@@ -8951,22 +8860,6 @@
 					"parameter_longname" : "live.slider[6]"
 				}
 ,
-				"obj-67::obj-13" : 				{
-					"parameter_longname" : "live.dial[69]"
-				}
-,
-				"obj-67::obj-14" : 				{
-					"parameter_longname" : "live.dial[66]"
-				}
-,
-				"obj-67::obj-16" : 				{
-					"parameter_longname" : "live.gain~[74]"
-				}
-,
-				"obj-67::obj-26" : 				{
-					"parameter_longname" : "live.gain~[90]"
-				}
-,
 				"obj-70::obj-13" : 				{
 					"parameter_longname" : "live.dial[65]"
 				}
@@ -8994,231 +8887,231 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "6hits+8v.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "A_440.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/@TouchTones removed",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/@TouchTones removed",
+				"bootpath" : "~/projects/behrman/Max7_dbtools/fiddle-M7",
+				"patcherrelativepath" : "../../../../../projects/behrman/Max7_dbtools/fiddle-M7",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSynC+drifters.4.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSynL+drifters.4.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSynR+drifters.4.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSyns-pitches.aug'25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSyns-pitches.aug7.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSyns-sources.july22.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "AnSyns-stagemgr+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSynC+drifters.25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSynL+drifters.25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSynR+drifters.25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSyns-pitches.aug'25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSyns-pitches.aug6.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSyns-sources.july2.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025/new DSyn wing 6 25",
-				"patcherrelativepath" : "./new DSyn wing 6 25",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/new DSyn wing 6 25",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "DSyns-stagemgr+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "MIDI#s->freq440.txt",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/tools-M8/colls",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/tools-M8/colls",
+				"bootpath" : "~/projects/behrman/leapday/LN-revival-8-13-2020",
+				"patcherrelativepath" : "../../../../../projects/behrman/leapday/LN-revival-8-13-2020",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOO'21_pitch_sets.txt",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-fiddle&pitchsets",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-fiddle&pitchsets",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-fiddle&pitchsets",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-fiddle&pitchsets",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOO-6timers'25+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOO-fiddle~5-25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner10.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner2.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner4.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner5.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-panners",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOOpanners",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner8.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "OOOpanner9.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Surging_ASL+.maxpat",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bank4a-m.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bank4b-m.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpatch-low-volu.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-logic",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-logic",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-logic",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-logic",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "chroma-MIDIs.txt",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/#GStore in M8",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/#GStore in M8",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "chroma@-MIDIs",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/tools-M8/colls",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/tools-M8/colls",
+				"bootpath" : "~/projects/behrman/Intersp Smallt in M 5_DF_MOD",
+				"patcherrelativepath" : "../../../../../projects/behrman/Intersp Smallt in M 5_DF_MOD",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "dipdriver.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "early-returns.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -9229,98 +9122,91 @@
 			}
 , 			{
 				"name" : "floors&ceilings.aug6.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freerun-bends.july18'25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freerun-sources-july23'25.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-freerun",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-freerun",
+				"bootpath" : "~/projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/Freerun-standalone",
+				"patcherrelativepath" : "../../../../../projects/behrman/new_onOther_Ocean/OOOrevival-M2-2025/Freerun-standalone",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "new-lower-volus.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-logic",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-logic",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-logic",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21/OOO-logic",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "new-trigger-sets?.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stage2b.aug12.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "symbol-handler*6.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021",
+				"bootpath" : "~/projects/behrman/on-the-other-ocean/OOO-export-Sept21",
+				"patcherrelativepath" : "../../../../../projects/behrman/on-the-other-ocean/OOO-export-Sept21",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "translate-6-pitchesM8.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "undu-ASC+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "undu-ASL+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "undu-ASR+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
-				"patcherrelativepath" : "../../DB's_Max8_on2018Air/OOO revival 2021/OOO-undula",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "undu-DSC+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "undu-DSL+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "undu-DSR+.maxpat",
-				"bootpath" : "~/Desktop/Music-DB/DB's_Max8_on_M2/OOOrevival-M2-2025",
+				"bootpath" : "~/gitprojects/MUSI-650-20/class3/behrman_repetoire/OOOrevival-M2-2025",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
