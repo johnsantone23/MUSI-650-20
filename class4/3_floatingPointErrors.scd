@@ -30,13 +30,39 @@ Spec.add(\period, ControlSpec(0.01, 10, 'exp', 0, 0.005));
 ~silentSine = NodeProxy.new.play;
 ~silentSine.source = {|period=0.005|
 	0.1*Median.ar(30, Limiter.ar(99999999*LeakDC.ar((SinOsc.ar(period/10) + SinOsc.ar(period/10, pi)), 0.05)))!2};
-~silentSine.gui
 )
 
 //"silent"" SVF isn't actually so silent. not sure if it's good at all!
-(~essV = NodeProxy.new.play;
-~essV.source = {|period=0.005|
-	0.1*SVF.ar((Median.ar(1, Limiter.ar(99999999*LeakDC.ar(LFPulse.ar(period) + LFPulse.ar(period, pi)), 0.6))), 800)!2};
-~essV.gui
+(
+Spec.add(\rhythm, ControlSpec(0.01, 10, 'exp', 0, 0.5));
+~essV = NodeProxy.new.play;
+~essV.source = {|rhythm=0.5|
+	0.1*SVF.ar((Median.ar(1, Limiter.ar(99999999*LeakDC.ar(LFPulse.ar(rhythm/1) + LFPulse.ar(rhythm/1, pi)), 0.6))), 800)!2};
 )
 
+//adding a pink noise instrument
+(
+Spec.add(\pinkRate, ControlSpec(0.0499, 0.2001, 'lin', 0, 0.5));
+~pink1 = NodeProxy.new.play;
+~pink1.source =
+{ |lofreq=3, pinkRate=0.1001|
+	var pink;
+	pink = PinkNoise.ar().range(0.0999/lofreq, 0.1001/lofreq)!2;
+	0.5*LeakDC.ar(Median.ar(5, Limiter.ar(99999999*(SawDPW.ar(pink) + SawDPW.ar(pink, pi)), 0.9)))
+};
+)
+
+(
+p = ~pink1.gui;
+p.parent.alwaysOnTop_(true);
+)
+
+(
+g = ~essV.gui;
+g.parent.alwaysOnTop_(true);
+)
+
+(
+w = ~silentSine.gui;
+w.parent.alwaysOnTop_(true);
+)
