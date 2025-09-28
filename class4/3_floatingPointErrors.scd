@@ -1,8 +1,13 @@
-(
+
 //floating point errors
 //by Eli Rosenkim
 //https://sccode.org/1-5g9
 
+//SC-3 plugins needed...make sure you install
+//github.com/supercollider/sc3-plugins
+
+//eli's original code
+(
 { var pink;
 	pink = PinkNoise.ar().range(0.08, 0.12)!2;
 	0.5*LeakDC.ar(Median.ar(2, Limiter.ar(99999999*(SawDPW.ar(pink) + SawDPW.ar(pink, pi)), 0.9)))}.play;
@@ -26,22 +31,24 @@
 //silent sine nodeproxy with pitch control
 //what does median do?
 (
+s.boot;
+
 Spec.add(\period, ControlSpec(0.01, 10, 'exp', 0, 0.005));
 ~silentSine = NodeProxy.new.play;
 ~silentSine.source = {|period=0.005|
 	0.1*Median.ar(30, Limiter.ar(99999999*LeakDC.ar((SinOsc.ar(period/10) + SinOsc.ar(period/10, pi)), 0.05)))!2};
-)
 
-//"silent"" SVF isn't actually so silent. not sure if it's good at all!
-(
+
+//"silent"" SVF isn't actually so silent. not sure if it's "silent" at all, but it provides a nice rhythm.
+
 Spec.add(\rhythm, ControlSpec(0.01, 10, 'exp', 0, 0.5));
 ~essV = NodeProxy.new.play;
 ~essV.source = {|rhythm=0.5|
 	0.1*SVF.ar((Median.ar(1, Limiter.ar(99999999*LeakDC.ar(LFPulse.ar(rhythm/1) + LFPulse.ar(rhythm/1, pi)), 0.6))), 800)!2};
-)
+
 
 //adding a pink noise instrument
-(
+
 Spec.add(\pinkRate, ControlSpec(0.0499, 0.2001, 'lin', 0, 0.5));
 ~pink1 = NodeProxy.new.play;
 ~pink1.source =
@@ -50,19 +57,20 @@ Spec.add(\pinkRate, ControlSpec(0.0499, 0.2001, 'lin', 0, 0.5));
 	pink = PinkNoise.ar().range(0.0999/lofreq, 0.1001/lofreq)!2;
 	0.5*LeakDC.ar(Median.ar(5, Limiter.ar(99999999*(SawDPW.ar(pink) + SawDPW.ar(pink, pi)), 0.9)))
 };
-)
 
-(
+
+//set up the templates
+
 p = ~pink1.gui;
 p.parent.alwaysOnTop_(true);
-)
+p.parent.bounds_(Rect(900, 300, 400, 200)); // x, y, width, height
 
-(
 g = ~essV.gui;
 g.parent.alwaysOnTop_(true);
-)
+g.parent.bounds_(Rect(900, 50, 400, 200));
 
-(
+
 w = ~silentSine.gui;
 w.parent.alwaysOnTop_(true);
+w.parent.bounds_(Rect(900, 570, 400, 200));
 )
