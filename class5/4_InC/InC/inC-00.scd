@@ -9,16 +9,23 @@ Pbindef.clear;
 ~clock = TempoClock.new(2).permanent_(true); // if not using a shared clock
 ~mySynth = "default"; // choose a synth here
 
+//~mySynth = "xylophone"; // choose a synth here
+//SCLOrkSynths.load
+
+
+
 // ORIGINAL (do not live code on this one)
 
 (
 Pbindef(\clave,
 	\instrument, ~mySynth,
-	\degree, Pseq([14], inf),
+	\degree, (14),
     \dur, Pseq([0.5, 0.5], inf),
-    \amp, Pwhite(0.2, 0.6, inf),
-    \legato, Pwhite(0.2, 0.6, inf)
+    \amp, Pwhite(0.1, 0.9, inf),
+    \legato, Pwhite(0.1, 2, inf),
+	\out, 0
 ).play(~clock, quant: 1).quant = 1;
 )
 
+~clock.tempo_(2) //change tempo
 

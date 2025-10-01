@@ -1,17 +1,31 @@
-///////////////////////////////
-// get the set up ready
-///////////////////////////////
-///////////////////////////////
+//we want a wrapper for patterns. so we'll use Pdef.
+//Like Synthdef and Ndef and Nodeproxy, def just means empty containers for patterns
 
+(
+Pdef(\melody,
+	Pbind(
+		\instrument, \default,
+		\note, Pseq([0,2, 4, 5,6, 7, 8], inf),
+		\dur, 0.25,
+		\amp, 0.5,
+		)
+	)
+)
+
+//and here's where you call the thing on
+Pdef(\melody).play;
+
+// see! easy!
 
 (
 Pdef(\firstpattern,
 (Pbind (
+\instrument, \default,
 \scale, [0,2,3,5,7,8,10],
 \octave, Pxrand([1,2,3,4,5,6,7], inf),
 \degree, Pxrand([0,1,2,3,4,5,6,7], inf),
 \dur, Pseq([1/8], inf),
-\amp, Pseq([0.7,0.2], inf),
+\amp, Pwhite(0.1,0.9, inf),
 \db, -1
 )
 )).quant_(1);

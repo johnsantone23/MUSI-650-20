@@ -74,3 +74,70 @@ w = ~silentSine.gui;
 w.parent.alwaysOnTop_(true);
 w.parent.bounds_(Rect(900, 570, 400, 200));
 )
+
+
+//sandbox
+//
+{0.1*(99999999*LeakDC.ar(SinOsc.ar(0.1)+SinOsc.ar(0.1,pi)))}.play;
+
+
+{0.1*(99999999*LeakDC.ar(SinOsc.ar(LFNoise2.kr(1.5!2).exprange(0.14, 0.125))+SinOsc.ar(LFNoise2.kr(1.5!2).exprange(0.14, 0.125),pi)))}.play;
+
+
+
+(
+{
+    var phase = Phasor.ar(0, 0.1 * SampleDur.ir, 0, 2pi);
+    0.1 * (99999999*LeakDC.ar(cos(phase) + cos(phase + pi)));
+}.play;
+)
+
+
+(
+{
+    var phase = Phasor.ar(0, LFNoise2.kr(0.5!2).exprange(0.04, 0.125) * SampleDur.ir, 0, 2pi);
+    0.1 * (99999999*LeakDC.ar(cos(phase) + cos(phase + pi)));
+}.play;
+)
+
+(
+{
+    var phase = Phasor.ar(0, LFNoise2.kr(0.5!2).exprange(0.04, 0.125) * SampleDur.ir, 0, 2pi);
+	0.1 * (99999999*LeakDC.ar(Median.ar(25,cos(phase) + cos(phase + pi))));
+}.play;
+)
+
+(
+{
+    var phase = Phasor.ar(0, LFNoise0.kr(0.5!2).exprange(0.0004, 0.00125) * SampleDur.ir, 0, 2pi);
+	0.1 * (99999999*LeakDC.ar(Median.ar(25,cos(phase) + cos(phase + pi))));
+}.play;
+)
+
+(
+{
+    var phase = Phasor.ar(0, LFNoise0.kr(0.5!2).exprange(0.0004, 0.00125) * SampleDur.ir, 0, 2pi);
+    var sig = 0.1 * (99999999*LeakDC.ar(Median.ar(25,cos(phase) + cos(phase + pi))));
+	sig>0.25;
+}.play;
+)
+
+(
+{
+    var phase = Phasor.ar(0, LFNoise0.kr(0.5!2).exprange(0.0004, 0.00125) * SampleDur.ir, 0, 2pi);
+    var sig = 0.1 * (99999999*LeakDC.ar(Median.ar(25,cos(phase) + cos(phase + pi))));
+    HPZ2.ar(sig);
+}.play;
+)
+
+
+(
+~phasorCreep = NodeProxy.new.play;
+~phasorCreep[0]=
+{|lofreq=0.5|
+    var phase = Phasor.ar(0, LFNoise0.kr(lofreq!2).exprange(0.0004, 0.00125) * SampleDur.ir, 0, 2pi);
+    var sig = 0.1 * (99999999*LeakDC.ar(Median.ar(25,cos(phase) + cos(phase + pi))));
+	sig>MouseX.kr(0,1);
+};
+~phasorCreep.gui)
+~phasorCreep.gui
