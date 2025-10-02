@@ -31,6 +31,19 @@ Pdef(\firstpattern,
 )).quant_(1);
 )
 
+(
+Pdef(\melody,
+	Pbind(
+	\instrument, \FMRhodes2,
+	\note, Prand([0, 2, 2,2, 2, 4, 5, 7, 14], inf),
+	\dur, Pseq([1/8, 1/4, 1/3, 1/2]/8, inf),
+	\octave, Pxrand([1,7],inf),
+	\amp, Pwhite(0.1, 0.3, inf),
+	);
+)
+)
+
+Pdef(\melody).play
 
 
 
