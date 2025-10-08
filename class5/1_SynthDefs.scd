@@ -67,10 +67,10 @@ x.set(\freq, 71)
 
 
 (
-SynthDef(\envT, {|freq=100, portamento=1.5, amp=0.1, pan=0, gate=1|
+SynthDef(\behrman, {|freq=100, portamento=1.5, amp=0.1, pan=0, gate=1|
     var voice, env;
     freq = Lag.kr(freq, portamento);
-    voice = VarSaw.ar([freq, freq*1.5, freq*4, freq*6], 0, 0.5, amp);
+    voice = Splay.ar(VarSaw.ar([freq, freq*1.5, freq*4, freq*6], 0, 0.5, amp));
     // ADSR envelope controlled by gate
     env = EnvGen.kr(Env.adsr(0.1, 0.1, 0.8, 0.5), gate, doneAction: 2);
     voice = voice * env;
@@ -78,10 +78,11 @@ SynthDef(\envT, {|freq=100, portamento=1.5, amp=0.1, pan=0, gate=1|
 }).add;
 )
 
-x = Synth(\envT, [\freq, 400])
+x = Synth(\behrman, [\freq, 400])
 
-x = Synth(\envT, [\freq, 100])
+x = Synth(\behrman, [\freq, 100])
 
+x.set(\freq, 100)
 x.release
 
 
@@ -113,7 +114,7 @@ SynthDef(\peaky,
 r = Synth(\peaky, [\freq, 200])
 //like this!
 //or
-x = Synth(\envT, [\freq, 400])
+x = Synth(\behrman, [\freq, 400])
 //this!
 
 z = Synth(\swirl, [\freq, 60]);

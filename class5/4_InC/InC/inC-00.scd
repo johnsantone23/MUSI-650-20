@@ -7,9 +7,9 @@
 //evaluate these line by line...
 Pbindef.clear;
 ~clock = TempoClock.new(2).permanent_(true); // if not using a shared clock
-~mySynth = "default"; // choose a synth here
+~mySynth = "bassWarsawMouse"; // choose a synth here
 
-SCLOrkSynths.load
+SCLOrkSynths.gui
 
 
 
